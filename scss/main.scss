@@ -107,7 +107,12 @@ body{
         margin-right: 1.5rem;
       }
 
+      p{
+        font-weight: bold;
+      }
+
       .verified{
+        font-weight: normal;
         color: $soft-pink;
       }
     }
