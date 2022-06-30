@@ -1,0 +1,54 @@
+@media (max-width: 1200px){
+  body{
+    height: 100%;
+    overflow: auto;
+  }
+  #showcase{
+   flex-direction: column;
+   gap: 3rem;
+    height: fit-content;
+    margin-bottom: 4rem;
+
+    .showcase-left{
+      width: 100%;
+      text-align: center;
+    }
+
+    .showcase-right{
+      width: 100%;
+      .ratings{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+  
+        .rating-text{
+          margin: 0;
+        }
+      }
+  
+      .rating-1, .rating-2, .rating-3{
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+
+
+  #testimonials{
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    margin-bottom:2rem;
+
+
+    .testimonials{
+      width: 100%;
+    }
+
+    .testimonial-2, .testimonial-3{
+      transform: translateY(0);
+    }
+  }
+}

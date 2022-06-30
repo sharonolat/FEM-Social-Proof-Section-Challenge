@@ -1,0 +1,127 @@
+@import 'utilities';
+
+
+
+// Reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'League Spartan', sans-serif;
+  line-height: 1.4;
+  height: 100vh;
+  overflow: hidden;
+  background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom
+   right;
+  background-repeat: no-repeat;
+
+  padding-top: 100px;
+}
+
+// Showcase
+#showcase{
+  display: flex;
+  gap: 10rem;
+  color: $very-dark-magenta;
+  height: 35vh;
+  margin-bottom: 2rem;
+
+  .showcase-left{
+    width: 30%;
+    
+    h1{
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  .showcase-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    .ratings{
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      background: $light-grayish-magenta;
+      padding: .8rem 2.5rem;
+      padding-right: 4rem;
+      border-radius: 10px;
+
+      .star{
+        margin-right: .3rem;
+      }
+      
+      .rating-text{
+        margin-left: 1.8rem;
+        font-weight: bold;
+      }
+    }
+    .rating-1{
+      transform: translate(40px, 50px);
+    }
+    .rating-2{
+      transform: translate(110px, 50px);
+    }
+    .rating-3{
+      transform: translate(180px, 50px);
+    }
+  }
+}
+
+
+
+
+
+// Testimonials
+#testimonials{
+  height: 50vh;
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+  color: #fff;
+  
+
+  .testimonials{
+    width: 350px;
+    height: fit-content;
+    background: $very-dark-magenta;
+    padding: 2.5rem 1.5rem;
+    border-radius: 10px;
+
+    &-img{
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+
+      img{
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+      }
+
+      .verified{
+        color: $soft-pink;
+      }
+    }
+  }
+
+  .testimonial-2{
+    transform: translateY(30px);
+  }
+  .testimonial-3{
+    transform: translateY(60px);
+  }
+}
+
+
+@import 'media queries';
+
+
